@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>*{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        background-image: url("/images/bacalc.webp");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        overflow: hidden;
+    }
+    h1{
+        color: #1EAD14;
+        background-color: #000000;
+        padding: 10px;
+        margin-bottom: 20px;
+        text-align: center;
+        transition: all 0.7s ease-in-out;
+    }
+    h1:hover{
+        color: #fff;
+        background-color: #5434B7;
+        padding: 10px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .calc {
+    padding: 10px;
+    border-radius: 1em;
+    height: 380px;
+    width: 400px;
+    margin: auto;
+    background-color: #70BDBB;
+    box-shadow: 2px -1px 5px 3px rebeccapurple;
+    }
+    .display-box {
+    font-family: 'Diplomata SC', cursive;
+    background-color: #26AF28;
+    border: solid black 0.5px;
+    color: black;
+    border-radius: 5px;
+    width: 95%;
+    height: 65%;
+    }
+    .cle{
+        background-color: #5ED73F;
+        margin-right: 10%;
+        padding-left: 10px;
+        font-size: 20px;
+    }
+    #Bt {
+        background-color: #5661DE;
+        color: #fff;
+        cursor: pointer;
+    }
+    #Bt:hover{
+        background-color: orangered;
+        color: #fff;
+        cursor: pointer;
+    }
+    #Btc{
+        color: #5A0707;
+        font-size: 18px;
+        background-color: antiquewhite;
+        transition: all 0.6s ease;
+    }
+    #Btc:hover{
+        background-color: orangered;
+        color: #fff;
+        cursor: pointer;
+    }
+    input[type=button] {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #000000;
+    color: #1EAD14;
+    border: solid black 0.5px;
+    width: 100%;
+    border-radius: 5px;
+    height: 70%;
+    outline: none;
+    }
+    /* input:active[type=button] {
+    background: #E5E5E5;
+    } */
+    #mr{
+        color: red;
+        background-color: #fff;
+        width: 70%;
+        font-size: 18px;
+        padding: 10px;
+        transition: all 0.6s ease;
+    }
+    #mr:hover{
+        background-color: #26AF28;
+        color: #fff;
+        cursor: pointer;
+    }
+    #n{
+        /* display: inline-block; */
+        background-color: #fff;
+        font-size: 18px;
+        color: red;
+        width: 65px;
+        transition: all 0.6s ease;
+    }
+    #n:hover{
+        background-color: #26AF28;
+        color: #fff;    cursor: pointer;
+    }
+    #f{
+        font-family: 'Diplomata SC', cursive;
+        font-size: 30px;
+         padding: 15px; 
+        transition: all 0.3s ease-out;
+    }
+    #f:hover{
+        background-color: #5434B7;
+        color: #fff;
+        cursor: pointer;
+    }</style>
+    <script>// This function clear all the values
+        function clearScreen() {
+            document.getElementById("result").value = "";
+            }
+            // This function display values
+            function display(value) {
+            document.getElementById("result").value += value;
+            }
+            // This function evaluates the expression and returns result
+            function calculate() {
+            var m = document.getElementById("result").value;
+            var n = eval(m);
+            document.getElementById("result").value = n;
+            }</script>
+</head>
+<body>
+    <h1>Simple calculator</h1>
+    <table class="calc" cellspacing="2px" cellpadding="2px">
+            <td colspan="2"> <input class="display-box cle" type="text" id="result"> </td>
+            <td> <input type="button" value="C" onclick="clearScreen()" id="Bt" /> </td>
+            <td> <input type="button" value="=" onclick="calculate('0')" id="Btc"></td>
+            <tr>
+            <tr>
+                <td><input id="mr"type="button" value="7" onclick="display('7')"></td>
+                <td><input id="mr"type="button" value="8" onclick="display('8')"></td>
+                <td><input id="n"type="button" value="9" onclick="display('9')"></td>
+                <td><input id="f" type="button" value="+" onclick="display('+')"></td>
+                <!-- <td rowspan="2"><input type="button" value="DEL" onclick="display('del')"></td> -->
+            </tr>
+            <tr>
+                <td><input id="mr"type="button" value="4" onclick="display('4')"></td>
+                <td><input id="mr"type="button" value="5" onclick="display('5')"></td>
+                <td><input id="n"type="button" value="6" onclick="display('6')"></td>
+                <td><input id="f"type="button" value="-" onclick="display('-')"></td>
+            </tr>
+            <tr>
+                <td><input id="mr" type="button" value="1" onclick="display('1')"></td>
+                <td><input id="mr" type="button" value="2" onclick="display('2')"></td>
+                <td><input id="n" type="button" value="3" onclick="display('3')"></td>
+                <td><input id="f" type="button" value="/" onclick="display('/')"></td>
+            </tr>
+            <tr>
+                <td><input id="mr" type="button" value="0" onclick="display('0')"></td>
+                <td><input style="font-size: 30px;" id="mr" type="button" value="." onclick="display('.')"></td>
+                <td><input id="n" type="button" value="00" onclick="display('00')"></td>
+                <td><input id="f" type="button" value="*" onclick="display('*')"></td>
+                <!-- <td><input type="button" value="Madulous" onclick="display('%')"></td> -->
+            </tr>
+        </table>
+        
+</body>
+</html>
+3:52
+
+3:52

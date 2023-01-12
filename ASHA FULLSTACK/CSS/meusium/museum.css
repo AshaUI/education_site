@@ -1,0 +1,87 @@
+#m {
+border: 4px dotted rgb(1, 12, 1);
+border-top-left-radius: 1px;
+border-top-right-radius:40px ;
+border-bottom-left-radius:40px ;
+border-bottom-right-radius:1px ;
+margin-right: 500px;
+margin-top: 200px;
+width: 800px;
+height: 700pxl;
+padding-right: 80px;
+padding-left: 20px;
+padding-bottom: 20px;
+color: black;
+text-shadow: 2px 2px rgb(224, 224, 44);
+
+}
+
+img{
+float: left;
+
+}
+body{
+background-image: url('./images/Bird.jpg');
+
+}
+
+
+#y {
+    list-style-type: none;
+    height: 70px; 
+    width: 100%;
+    margin-right: 0px;
+    background-color:rgb(2, 2, 17);
+    
+    
+    }
+     #y li a
+    {
+       display: inline;
+        text-decoration: none;
+        padding:20px  40px 10px 40px;
+        float:left ;
+        color: rgb(246, 251, 251);
+        font-size: 20px;
+        
+    }
+
+    #x {
+        list-style-type: none;
+        margin-left:50px;
+    
+        width:180px;
+        background-color: maroon;
+        
+        margin-top: 0px;
+        line-height: 120px;
+        
+        }
+        
+        #x li a
+         {
+            display: block;
+            text-decoration: none;
+            padding:40px;
+            float:none ;
+            color: azure;
+            font-size: 20px;
+        }
+
+      #x  a:hover {
+            color: blue;
+            background-color:white;
+            padding: 20px;
+            font-size: 40px;
+            border: 2px solid white;
+        
+        }
+
+        #y  a:hover {
+            color: black;
+            background-color:skyblue;
+            padding: 20px;
+            font-size: 30px;
+            border: 2px dashed white;
+        
+        }

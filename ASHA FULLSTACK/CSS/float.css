@@ -1,0 +1,38 @@
+
+table ,th ,td  /*borders for all rws and clnms*/
+{
+    border:1px solid blue ;/*for borders*/
+    border-collapse: collapse;/*fr single line table with no colapse*/
+    empty-cells: hide;  /*for hiding empty cells*/
+}
+/*OVERFLOW CONTROLLER BY SCROLL BAR*/
+
+/*p{
+    border: 1px dashed red;
+    background-color: aqua;
+    width: 200px;
+    height:200px ;
+    overflow-y: scroll; /*over flow adds scroll bar and can hide contnt accr out optn,,,x gives only hori  y gives only vertical
+}*/
+
+/*floating content*/
+h2{
+   /* float: right;*/
+   display: inline;
+
+}
+
+img {
+width: 100px;
+height: 100px;
+border: pxl dashed red;
+}
+/*to manage space btwn img and content to diplay side by side as we know <p> tag is block level it wont strt at new line but it can adjust*/
+
+#x,#y
+{
+    float: right;
+
+}
+/* DISPLAY to chnage behaviour of element lik block to inline*/
+

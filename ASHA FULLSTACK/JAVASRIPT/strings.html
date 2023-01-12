@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+       //STRING METHODS
+//length-------------------
+let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let length = text.length;
+console.log(length)  //o/p:26
+
+// Print the string as it is
+let gfg = 'GeeksforGeeks';
+let geeks = 'GfG is the best platform to "+ "learn and experience Computer Science.';
+console.log(gfg);   //o/p:GeeksforGeeks
+console.log(geeks);  //o/p:GfG is the best platform to "+ "learn and experience Computer Science
+//charAt()-------------------- 
+console.log(geeks.charAt(5));// As string index starts from zero,IT Will ive 5th indexd element i.e 's'
+console.log(gfg.charAt(0)); // It will return first character of string i.e 'G'
+//slice()--------------------
+var fruits = "Apple, Banana, Kiwi";
+var part = fruits.slice(7,13);
+console.log(part)     //o/p: Banana
+//substring()-----------
+let str = "Apple, Banana, Kiwi";
+let part2 = str.substring(15, 19);//includs 15th index  excludes 19 
+console.log(part2)     //o/p:Kiwi
+//replace()---------------
+let text2 = "Please visit Microsoft!";
+let newText = text2.replace("Microsoft", "Amazon");
+console.log(newText)    //o/p:Please visit Amazon!
+//charCode()----returns unicode of char
+let geek = 'GfG is the best platform to "+ "learn and experience Computer Science.';
+console.log(geek.charCodeAt(5));  //o/p:115
+//--concat()------------------
+var s1= 'FSD ';
+var s2= 'stands for FULL STACK DEVELOPMENT';
+// Accessing concat method on an object
+// of String passing another object
+// as a parameter
+console.log(s1.concat(s2));   //o/p:SD stands for FULL STACK DEVELOPMENT
+//endsWith()--------------------
+let text3 = 'GFG ';
+let text33 = 'stands for GeeksforGeeks';
+    // Accessing method of object geeks if
+    // 'geeks' ends with 'ks', method 
+    // return true
+console.log(text33.endsWith('ks'));    //o/p:true
+
+//fromCharCode()------
+console.log(String.fromCharCode(69));   //o/p:E
+
+//indexOf()--------------
+var text4= "FSD";
+var text44= 'We are fullstack developers'; 
+console.log(text4.indexOf('GFa'));   // 'GFa' is not in text4variable //o/p:-1
+console.log(text44.indexOf(' '));    //o/p:4
+
+//repeat()-------------- repeats  the strng as many number of time we give inside()
+var text4= "FSD";
+var text44= 'We are fullstack developers';
+console.log(text4.repeat(4));       //o/p:FSDFSDFSDFSD
+
+//replace()-------------
+var text4= "FSD";
+var text44= 'We are fullstack developers';
+console.log(text44.replace('fullstack' ,' upcoming'));  //o/p:We are  upcoming developers
+
+//search()-------------if searching element is available it will give strting index
+var text4= "FSD";      //if searching element is not available it will give -1
+var text44= 'We are fullstack developers';
+console.log(text4.search('are'));     //o/p:-1
+console.log(text44.search('are'));    //o/p:3
+
+//slice()----------------- making sub parts
+var text4= "FSD";
+var text44= 'We are fullstack developers';
+console.log(text4.slice(0,2));     //o/p:FS
+console.log(text44.slice(7,16));   //o/p:fullstack
+
+//split()-------------- splits in to pieses accrdng to separator
+var text5= 'FSD';
+var text55= 'We are fullstack developers';
+console.log(text55.split(' '));   //o/p:0: "We" 1: "are"2:"fullstack"3: "developers"   length: 4
+
+//startsWith()------------- true /false
+var text5= 'FSD';
+var text55= 'We are fullstack developers';
+console.log(text55.startsWith('we')); //case sensitiv so flse
+console.log(text5.startsWith('S'));   //o/p:flse
+
+//toUppercase()-----------toLowercase()-
+var text5= 'FSD';
+var text55= 'We are fullstack developers';
+console.log(text5.toLowerCase());   //o/p:fsd
+console.log(text55.toUpperCase());   //o/p:WE ARE FULLSTACK DEVELOPERS
+
+//trim()---- will delete  spaces 
+var text5= ' FSD   ';
+var text55= 'We-are-fullstack developers';
+var newtext5=text5.trim();
+console.log(text5.length);    //o/p:7  befor trim
+console.log(newtext5.length);  //o/p:3  after trim
+
+//padStart()-method pads a string with another string:
+let text6 = "5";
+let padded = text6.padStart(4,"x");
+console.log(padded)       //o/p:xxx5
+
+//padEnd()------------
+let text7 = "5";
+let padded2 = text7.padEnd(5,"x");
+console.log(padded2)        //o/p:5xxx
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

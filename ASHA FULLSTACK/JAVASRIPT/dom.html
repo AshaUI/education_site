@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script >
+
+function changeRed()
+{
+    document.getElementById('demo').style.color="red";
+}
+function changeBlue()
+{
+    document.getElementById('demo').style.color="blue";
+}
+function changeColor()
+{
+    var c=prompt;
+    document.getElementById('demo').style.color=c;
+}
+function getdata()
+{
+    var jname=document.form1.fname.value;
+    alert(jname);
+}
+function getcube()
+{
+    var jnum=document.getElementById('num').value;
+    alert(jnum*jnum*jnum);
+}
+function totgen()
+{
+    var allgenders=document.getElementsByName('gender');
+    alert(allgenders.length);
+}
+function totalpara()
+{
+    var allpara=document.getElementsByTagName('p');
+    alert(allpara.length);
+}
+function changeImage()
+{ 
+   
+   document.getElementById('demo2').src="./images/home2.jpg"
+}
+    </script>
+</head>
+<body>
+    <img src="./images/Bird.jpg" id="demo2" width="200px" height="200px">
+    <input type="button" value="click" onclick="changeImage()">
+
+    <h1 id="demo">Welcome to JS</h1>
+    <input type="button" value="red" onclick="changeRed()">
+    <input type="button" value="blue" onclick="changeBlue()">
+    <input type="button" value="choose color" onclick="changeColor()">
+    <form action="#" name="form1">
+        <input type="text" name="fname" id="n">
+        <input type="button" value="click" onclick="getdata()">
+    </form>
+    <form action="">
+        <input type="number" name="num" id="num">
+        <button type="button" onclick="getcube()">cube</button>
+    </form>
+    <form action="">
+        <input type="radio" name="gender" id="g">Female
+        <input type="radio" name="gender" id="g">Male
+        <input type="button" value="totalGenders" onclick="totgen()">
+    </form>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, atque?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ex neque exercitationem atque, laudantium dignissimos!</p>
+    <button onclick="totalpara()">countpara</button>
+</body>
+</html>
+

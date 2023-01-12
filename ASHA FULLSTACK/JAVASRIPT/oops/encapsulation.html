@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       class Person
+{
+    //properties
+    #personName;
+    #age;
+    //personName
+    setPersonName(value)
+    {
+       if(value==null||value==undefined)
+       {
+        console.error("null and undefined cant be assign to personName");
+       }
+       else if(value.length>=30)
+       {
+         console.error("personName should not be more than 30 chara....")
+       }
+       else{
+        this.#personName=value;
+       }
+    }
+    getPersonName()
+    {
+        return this.#personName;
+    }
+    //age
+    setAge(value)
+    {
+       if(value>=0 && value<=100)
+       {
+        this.#age=value;
+       }
+       else
+       {
+        console.error("person age must be in between 0 to 100");
+       }
+    }
+    getAge()
+    {
+      return this.#age;
+    }
+}
+let p1=new Person();
+// console.log(p1.setPersonName("john"));
+p1.setPersonName("john");
+console.log(p1.getPersonName());
+console.log(p1.setAge(99));
+console.log(p1.getAge());
+    </script>
+</body>
+</html>

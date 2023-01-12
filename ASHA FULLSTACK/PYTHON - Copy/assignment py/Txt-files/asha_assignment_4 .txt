@@ -1,0 +1,67 @@
+'''1. Given the nested list:
+   l=[2,3,[1,6,'Java']]
+   Reassign 'Java' to 'Python'.'''
+l=[2,3,[1,6,'Java']]
+l[2][2]='python'
+print(l)
+   
+#2.Demonstrate working of copy function for list. 
+l2=l.copy()
+print(l2) 
+
+#3.Join the below two lists
+l1=[1,2,3]
+l2=[4,5,6]
+print(l1+l2)
+   
+#4.Create list using constructor. 
+l4=list((1,2,3))
+print(l4)
+ 
+#5.Given list:
+lst=['w','e','l','c','o','m','e']
+ # demonstrate list membership test. 'in' or 'not in'
+print('w' in lst)
+print('m' not in lst)
+print('O'not in lst)
+
+
+
+#
+# 6.Given the list
+l1=[1,2,3,'abc',4,5,6]
+ # - perform indexing to print 'abc'
+print(l1[3])
+ # - perform slicing to print 4,5
+print(l1[4:6])
+#- perform negative indexing
+print(l1[-3])  
+# - add an element to list
+l1.append('asha')
+print(l1)
+# add an element specific position in list
+l1.insert(4,'python')
+ #-remove an element of list
+l1.remove(1)
+
+#- pop specific element of list'''
+l1.pop(7)
+print(l1)
+
+
+#7.
+lst=['a','b',1,2,3,4] # sort(),min().max() will give error
+        # - reverse the list
+print(lst[::-1])
+# sort the list in ascending and descending order
+
+
+lst.sort()
+print(lst)
+        #- print the list lst twice
+        # - print the max and min element from the list'''
+lst.sort(reverse=True)
+print(lst)
+
+print(max(lst))
+print(max(lst))

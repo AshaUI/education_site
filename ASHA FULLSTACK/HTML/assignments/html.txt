@@ -1,0 +1,118 @@
+<html lang="en">
+<head>
+ 
+    <title>Registration form</title>
+</head>
+<!-- we can give any colour or image as background -->
+<body background="./images/background.jpg">
+    <fieldset>
+    
+        <center>Registration form</center>
+          
+        <hr>
+    <table   align='center'>
+    
+    <div>
+        <tr> 
+       <td> <label for="n">Enter your name</label></td>
+        <!-- <textarea name="name" id="a" cols="30" rows="10" placeholder="enter your name"></textarea> -->
+       <td>  <input type="text" name="name" id="n" placeholder="enter your name" required></td>
+         </tr>
+    </div>
+    <div>
+        <tr>
+        <td><label for="n">Enter your Fathername</label></td>
+        <td><input type="text" name="name" id="n" placeholder="enter your Fathername" required></td>
+    </tr>
+    </div>
+    
+    <div>
+        <tr>
+       <td> <label for="n">Enter your Mothername</label></td>
+        <td><input type="text" name="name" id="n" placeholder="enter your Mothername"required></td>
+    </tr>
+    </div>
+   
+    <div>
+        <tr>
+      <td>  <lable for="g">Gender </lable></td>
+    <td>  <input type="radio" name="gender" id="g" >Female
+          <input type="radio" name="gender" id="g" >Male
+          <input type="radio" name="gender" id="g" >Others
+    </td>
+    </tr>
+    </div>
+    
+    <div>
+        <tr>
+       <td> <label for="q"> Qualification</label></td>
+    <td><input type="checkbox" name="Qualification" id="q">Btech
+        <input type="checkbox" name="Qualification" id="q">Mtech
+         <input type="checkbox" name="Qualification" id="q">Bsc
+       <input type="checkbox" name="Qualification" id="q">Msc
+       <input type="checkbox" name="Qualification" id="q">MBA
+       <input type="checkbox" name="Qualification" id="q">Bcom
+    </td>
+    </tr>
+    </div> 
+  
+    <div>
+        <tr>
+       <td> <labe for="c"> Contact Number</labe></td>
+       <td><input type="number" name="" id="c"placeholder='Enter your mobile number'> </td>
+    </tr>
+    </div>
+
+    <div>
+        <tr>
+    <td> <lable for="m">Email id</lable></td>
+<td>  <input type="email" name="Email" id="m"placeholder='Example@gmail.com'></td>
+</tr>
+    </div>
+
+    <div>
+        <tr>
+       <td> <label for="d" >Date Of Birth</label></td>
+    <td> <input type="date" name="DOB" id="d"></td>
+    </tr>
+    </div>
+
+<div>
+    <tr>
+   <td><label for="p">Upload Resume</label></td>
+<td> <input type="file" name="upload" id="p"></td>
+</tr>
+</div>
+
+
+<div>
+    <tr>
+    <td><label for="c">Select your city</label></td>
+ <td> <select name="city" id="c" placeholder="select city">
+ <option value="">Hyderabad</option>
+<option value="">Guntur</option>
+ <option value="">Bangalore</option>
+ <option value="">chennai</option>
+<option value="">vyzag</option>
+    </select></td>
+</tr>
+</div>
+
+<div>
+    <tr>
+<td>  <label for="a">Address</label></td> 
+<td>    <textarea name="" id="a" cols="30" rows="10"></textarea></td> 
+</tr>
+</div>
+<div>
+  <tr  align='center'>
+        <td><input type="submit" value="submit"></td>
+        
+</tr>
+</div>
+</table>
+</form>
+</table>
+</fieldset>
+</body>
+</html>

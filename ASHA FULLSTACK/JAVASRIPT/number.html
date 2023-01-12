@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+var x = 123;
+x.toString();            // returns 123 from variable x
+
+console.log(x)
+//toexponential()------
+var x = 9.656;
+x.toExponential(2);     // returns 9.66e+0
+x.toExponential(4);     // returns 9.6560e+0
+x.toExponential(6);     // returns 9.656000e+0
+console.log(x)
+//tofixed()---
+var x = 9.656;
+x.toFixed(0);           // returns 10
+x.toFixed(2);           // returns 9.66
+x.toFixed(4);           // returns 9.6560
+x.toFixed(6);           // returns 9.656000
+console.log(x)
+//toprecision()-
+var y = 12.345;
+y.toPrecision();        
+y.toPrecision(2);       // returns 9.7
+y.toPrecision(4);       // returns 9.656
+y.toPrecision(6);       // returns 9.65600
+console.log(y)
+//valueof()-
+var x = 123;
+x.valueOf();            // returns 123 from variable x
+(123).valueOf();        // returns 123 from literal 123
+(100 + 23).valueOf();   // returns 123 from expression 100 + 23
+//number()-
+x = true;
+console.log(Number(x));        // returns 1
+x = false;     
+console.log(Number(x));        // returns 0
+x = "10"
+console.log(Number(x));        // returns 10
+x = "10 20"
+console.log(Number(x));
+//parseint()----
+console.log(parseInt("10 20 30"));   // returns 10
+console.log(parseInt("10 years"));   // returns 10
+console.log(parseInt("years 10"));   // returns NaN
+//parsfloat()---------
+console.log(parseFloat("10 20 30"));  // returns 10
+console.log(parseFloat("10 years"));  // returns 10
+console.log(parseFloat("years 10"));  // returns NaN 
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

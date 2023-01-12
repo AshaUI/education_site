@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+ 
+class Teacher
+{
+   teacherName;
+   constructor(tName)
+   {
+    this.teacherName=tName
+   }
+}
+// child class
+class PhysicsTeacher extends Teacher
+{
+  mainSubject;
+  constructor(msubject,ctname)
+  {
+    super(ctname);
+    this.mainSubject=msubject;
+  }
+  getDetails()
+  {
+    return `teachername:${this.teacherName}, mainsubject: ${this.mainSubject}`;
+  }
+}
+let Teacher1=new PhysicsTeacher("physical science","allen");
+console.log(Teacher1.getDetails());
+  </script>
+</head>
+<body>
+  <h1>inheritance</h1>
+  
+</body>
+</html>
+
+

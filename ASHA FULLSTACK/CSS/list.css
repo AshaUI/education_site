@@ -1,0 +1,19 @@
+ul.a{
+list-style-type:none;
+}
+li::before{
+    content: "\1F60D";
+}
+ul.b{
+    list-style-type: none;
+}
+li::before{
+    content:'\1f49e';
+}
+body{
+    background-image: linear-gradient(rgb(223, 223, 134),green,rgb(141, 141, 225),rgb(214, 166, 76));
+    background-size: 200xpx 100vh;
+    background-attachment: fixed;
+
+}
+

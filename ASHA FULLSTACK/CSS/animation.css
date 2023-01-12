@@ -1,0 +1,53 @@
+#demo{
+    animation-name: colour;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    text-align: center;
+}
+#x
+{color:blue;
+    padding-left: 20px;
+    font-size: 20px;
+
+}
+#y
+{
+    color:black;
+   padding-right: 30px;
+    font-size: 100px;
+
+}
+@keyframes colour{
+    
+    0%{background-color:blue}
+    25%{background-color:violet}
+    50%{background-color:greenyellow}
+    75%{background-color:red}
+
+    
+}
+#demo2{
+    animation-name: text;
+    animation-duration: 8s;
+    animation-iteration-count:infinite;
+}
+@keyframes text {
+0%{
+    content: "jaipur";
+    color: blue;
+    background-color: aqua;
+}
+50%{
+    content: "delhi";
+    color: green;
+    background-color:red;
+}
+0%{
+    content:"agra";
+    color: blue;
+    background-color: green;
+}
+
+
+    
+}

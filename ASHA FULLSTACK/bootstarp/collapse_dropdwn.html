@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ 
+ <!--dropdown (b4-dropdown enter)-->1
+
+ <div class="btn-group">
+    <!--button :wen we click on it it will show drop dwn list-->
+    <button class="btn btn-primary dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+                This dropdown's menu is right-aligned
+    </button>
+    <!--menu of bittons-->
+    <div class="dropdown-menu dropdown-toggle" aria-labelledby="triggerId">
+      <table >
+       <tr > <a class="dropdown-item" href="#" style="border: 2px solid black;">html</a></tr>
+        <tr><a class="dropdown-item disabled" href="#" style="border: 2px solid black;">Disabled action</a></tr>
+        <h6 class="dropdown-header"style="border: 2px solid black;">Section header</h6>
+        <a class="dropdown-item"style="border: 2px solid black;" href="#">Action</a>
+        <div class="dropdown-divider"style="border: 2px solid black;">drpdwn drvr</div>
+        <a class="dropdown-item" href="#"style="border: 2px solid black;">After divider action</a></table>
+
+    </div>
+ </div>
+
+<!--2 nd drop dwn type--><br>2
+ <div class="dropdown open">
+    <a class="btn btn-secondary dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+                Dropdown
+            </button>
+    <div class="dropdown-menu" aria-labelledby="triggerId">
+        <a class="dropdown-item" href="#">hi</a>
+        <a class="dropdown-item disabled" href="#">hello</a>
+    </div>
+ </div>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <!--collapse  (b4-collapse)-->
+    <!--1.BUTTON  :wen we click the button content will be displyed-->
+    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#contentId" aria-expanded="false"
+            aria-controls="contentId">
+        Show
+    </button>
+ 
+  <!--2.CONTENT-->
+  <div class="collapse" id="contentId">
+   <img src="./images/mypic.jpg">
+   
+    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates culpa praesentium ea consequuntur doloribus labore voluptatibus saepe, nobis repudiandae tempore porro. Quia eius ab optio dolores illo vero, dolore commodi.</P>
+  </div>
+
+
+</body>
+</html>

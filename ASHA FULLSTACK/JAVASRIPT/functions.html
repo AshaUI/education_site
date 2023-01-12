@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUNCTIONS</title>
+    <script>
+        //---------------------------------FUNCTIONS--------------------------------------------------------
+//functions syntax
+function city_names$() // function name nad no spaces in name
+{
+    //statements
+    console.log("hyderabad")
+    
+
+}
+//function call
+city_names$()
+u=40;
+function add()
+{
+    var x=10;// local var
+    var y=30;
+    var z=x+y;
+    //console.log(z)
+    return z   // hover on function name tells wetehrfunc is return type or ot
+    // return should be lat tstement of block
+}
+console.log(add())  // wth return we can access local var outside
+console.log(u)
+
+function add(a,b)
+{
+var c=a+b;
+console.log(c)
+console.log(argument[2]);
+console.log(argument[3]);
+}
+
+add(10,20);
+add(10,20,30,40,50)
+
+function test1(x)
+{
+    return x;
+}
+let result=test1(100);
+console.log(result);
+
+//function expression
+var test2=function(x)
+{
+    return x
+}
+let result1=test2(200)
+
+//arrow function  fat arrow
+var test3=x=>x
+let result2=test3(300);
+console.log(result2)
+// 3 lines code is supressed as 1 line
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

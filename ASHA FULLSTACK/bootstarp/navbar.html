@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!--nav-->1
+  <nav class="nav justify-content-end">
+    <a class="nav-link active" href="#">Active link</a>
+    <a class="nav-link" href="#">Link</a>
+    <a class="nav-link disabled" href="#">Disabled link</a>
+  </nav>
+
+
+<!--NAVBAR-->2
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <p></p>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                    <a class="dropdown-item" href="#">Action 1</a>
+                    <a class="dropdown-item" href="#">Action 2</a>
+                </div>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-lg-2" type="text" placeholder="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+  </nav>
+
+<!--NAVBAR-->3
+<nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+        aria-expanded="false" aria-label="Toggle navigation"></button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                    <a class="dropdown-item" href="#">Action 1</a>
+                    <a class="dropdown-item" href="#">Action 2</a>
+                </div>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+
+</nav>4
+<ul class="nav nav-tabs">
+    <li class="nav-item">
+        <a href="#" class="nav-link active">Active</a>
+    </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Action</a>
+        </div>
+    </li>
+    <li class="nav-item">
+        <a href="#" class="nav-link">Another link</a>
+    </li>
+    <li class="nav-item">
+        <a href="#" class="nav-link disabled">Disabled</a>
+    </li>
+</ul>
+toggable
+<!--toggleble/dynamic tabs ==   --->
+<ul class="nav nav-tabs">
+    <li class="nav-item">
+        <a href="#" class="nav-link active">Active</a>
+    </li>
+    <li >
+        <a class="nav-item" data-toggle="tab" href="#home" role="button" aria-haspopup="true" aria-expanded="false">Alink</a>
+    </li>
+    <li class="nav-item">
+        <a href="#" class="nav-link" data-toggle="tab" href="#home2">Another link</a>
+    </li>
+    <li class="nav-item">
+        <a href="#" class="nav-link disabled" data-toggle="tab" href="#home3">Disabled</a>
+    </li>
+</ul>
+<!--tab panes-->
+<div class="tab-content">
+    <div id="home" class="container tab-pane active"> <br>
+        <h3>HOME</h3>
+        <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, delectus eligendi? Odio sequi consequatur laboriosam mollitia nesciunt aut, in sapiente soluta quos eaque atque eius quisquam officiis commodi reiciendis! Porro.</P>
+    </div>
+    <div id="home2" class="container tab-pane active"> <br>
+        <h3>HOME2</h3>
+        <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, delectus eligendi? Odio sequi consequatur laboriosam mollitia nesciunt aut, in sapiente soluta quos eaque atque eius quisquam officiis commodi reiciendis! Porro.</P>
+    </div>
+    <div id="home" class="container tab-pane active"> <br>
+        <h3>HOME3</h3>
+        <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, delectus eligendi? Odio sequi consequatur laboriosam mollitia nesciunt aut, in sapiente soluta quos eaque atque eius quisquam officiis commodi reiciendis! Porro.</P>
+    </div>
+</div>
+
+
+
+
+
+
+<!--project navbar with home and dropdown elements-->
+<!--togglble-->6
+<ul class="nav nav-tabs justify-content-end bg-info" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#home1">Home</a>
+    </li>
+    <li class="nav-item dropdown" >
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+        <div class="dropdown-menu"><!--added extra data toggle to drpdwn optns-->
+            <a class="dropdown-item"  data-toggle="tab" href="#dr1" style="border: 1px solid ;">DR1</a>
+            <a class="dropdown-item" data-toggle="tab" href="#dr2"style="border: 1px solid ;">DR2 </a>
+            
+            <a class="dropdown-item" href="#dr3" style="border: 1px solid ;">DR3</a>
+        </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#menu1">Menu 1</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#menu2">Menu 2</a>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div id="home1" class="container tab-pane active"><br>
+      <h3>HOME</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<img class=""  src="./images/cons logo.png">
+
+    </div>
+    <div id="menu1" class="container tab-pane fade"><br>
+      <h3>Menu 1</h3>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div id="menu2" class="container tab-pane fade"><br>
+      <h3>Menu 2</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+    </div>
+    <!--drop down tabs content along with togle bar content -->
+    <div id="dr1" class="container tab-pane fade"><br>
+        <h3>dr1</h3>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+      </div>
+
+      <div id="dr2" class="container tab-pane fade"><br>
+        <h3>dr2</h3>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+      </div>
+      <div id="dr3" class="container tab-pane fade"><br>
+        <h3>dr3</h3>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+      </div>
+    
+  </div>
+</div>
+
+</body>
+</html>
+
+
+
+
+<!--to get  content on same webpage wen we on one of drop down option drop down, add   data-toggle="tab" to the tab of dropdown as 
+done in line 146  147 and give content to those tabs in div tag with ther specific id, along with the content of toggle nav bar tabs -->

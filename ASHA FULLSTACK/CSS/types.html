@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <!-- for externaal css accessng anothe files attribut to this file -->
+    <link rel="stylesheet" href="sample.css">
+    <!-- for internal css -->
+    <style>
+        /*selector{property::-ms-value
+        }*/
+        h4
+        {
+          color: brown;  
+          text-align:center;
+          background-image: -moz-linear-gradient(blue);
+        }
+        h5
+        {
+          color:firebrick;  
+          text-align:center
+        }
+        h1
+        {
+          color:firebrick;  
+          text-align:end
+        }
+        
+    </style>
+</head>
+
+<body>
+    <!-- inline css --it can apply properties for just single elemnt in html pege -->
+    <h1 style="color:blue ;text-align:center;background-color:aqua;;">welcome to css h1</h1>
+    <h2 style="text-align:center;background-color:aqua;color:black">welcome to css 2</h2>
+
+    <!-- INTERNAL CSS --it can appy propertios to multiple element in single html page,here we should use <style> tg inside that we should selector and propertis -->
+    <!-- h4 an h5 selector in head part changes propertis of all h4 elements in this file -->
+      <h4>hello world  INTERNAL CSS</h4>
+    <h4>levelup INTERNAL CSS</h4>
+    <!-- h4 selector in head part changes propertis of all h4 elements in this file -->
+    <h5>levelup btc-3</h5>
+    <h1 >welcome to css h1</h1>
+
+    <!-- EXTERNAL CSS  -->
+<h5>welcome to css at level up  external</h5>
+<!-- here h5 defined in both internal type and external type but h5 got internal properties ,bcs INT has high priority than EXT -->
+  <p>welcome to css at level up  external<p>
+  <div>welcome to css at level up  external</div>
+  
+
+
+</body>
+</html>

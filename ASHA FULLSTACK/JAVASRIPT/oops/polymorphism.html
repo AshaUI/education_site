@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class Teacher
+        {
+            teacherName;
+            age;
+            constructor(tname,tage){
+                this.teacherName=tname
+                this.age=tage
+            }
+            PgetDetails(){
+                return `teachername:${this.teacherName} ,age:${this.age}`
+            }
+        }
+        class PhysicsTeacher extends Teacher{
+            subjNmae;
+            salary;
+            constructor(cname,cage,csubj,csalary)
+            {
+                super(cname,cage)
+                this.subjNmae=csubj;
+                this.salary=csalary;
+            }
+            CgetDetails(){
+                return `${super.PgetDetails ()},subjectname:${this.subjNmae},slary:${this.salary}`
+            }
+        }
+
+        let pt1=new PhysicsTeacher('sam',24,'maths',50000)
+        console.log(pt1.CgetDetails())
+
+    </script>
+</head>
+<body>
+    <p>here parent class is teacher with properties name and age,and child class has properties subname and salary, accessing parent methods to child
+        and ap
+    </p>
+</body>
+</html> 

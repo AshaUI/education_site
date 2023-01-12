@@ -1,0 +1,85 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0" />
+    <title>Text Animation</title>
+    <style>
+      body{
+        background-image: linear-gradient(orange,white,orange);
+        background-repeat: no-repeat;
+        background-size: 1800px 300%;
+
+
+      }
+      
+        h1 {
+            display: flex;
+            justify-content: center;
+            color: rgb(0, 100, 128);
+            font-size: 30px;
+            text-shadow: 3px 3px rgb(245, 142, 142);
+            margin-left: 500px;
+        }
+      
+        span::before {
+            content: "INDIA";
+            animation: animate infinite 5s;
+            padding-left: 10px;
+            font-style: italic;
+            font-size: 40px;
+            color:darkviolet;
+            text-shadow: 3px 3px red;
+        }
+      
+        @keyframes animate {
+      
+            0% {
+                content: "    NALLAMALA";
+                font-style:oblique;
+                color:blueviolet;
+                background-color: aqua;
+            }
+      
+            50% {
+                content: "     ARIZONA";
+                font-style:oblique;
+                color:brown;
+                background-color: chartreuse;
+            }
+      
+            75% {
+                content: "      AMAZON FOREST";
+                font-style: oblique;
+                color:deepskyblue
+            }
+        }
+  a:hover{
+            font-size: 30px;
+            background-color: green;
+        }
+        
+       
+    </style>
+    
+    
+</head>
+  
+<body>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <p  style="color: green ; text-shadow: 2px 2px green; text-align: center; font-size: 30px;">WELCOME TO MECHIGAN</p>
+    <h1 style="display:inline ;">LETS EXPLORE THE WORLD          </h1><span > </span>
+    <h2 style="text-align:center ;">"INDIA once  is not enough"</h2>
+
+    <a  href="" style="text-align:center ; border:2px solid blue;background-color: azure;text-decoration: none;margin-left: 700px;">
+        LEARN MORE</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a  href="meseum.html" style="text-align:center ; border:2px solid white;background-color: black;text-decoration: none; color: whitesmoke;padding:5px;">
+         SIGNUP HERE</a>
+</div>
+</body>
+  
+</html>

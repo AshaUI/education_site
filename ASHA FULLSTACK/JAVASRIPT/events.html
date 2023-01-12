@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script >
+function getdata()
+{
+    var names=document.form1.name.value;
+    alert(names);
+} 
+function fun()
+{
+    window.alert("hello fsd3");
+}
+function hello()
+{
+    alert("hello World");
+}
+function mouse()
+{
+    alert("hello levelup");
+} 
+    </script>
+</head>
+<body>
+    <!-- onclick-->
+    <form action="" name="form1">
+        <input type="button" value="">
+        <input type="text" name="name" id="n"> <!--fr spacebar to enter text-->
+        <input type="button" value="click" onclick="getdata()"><!--ater clickng smwer getdata() will be executed-->
+    </form>
+
+    <!-- onclick-->
+    <button type="button" onclick="fun()">Click</button>
+    <!-- onkeyup-->
+    <input type="text" name="" id="" onkeyup="hello()">
+    <!-- onmouseover-->
+    <input type="button" value="link" onmouseover="mouse()">
+    <!-- onchange -->
+    <input type="text" name="" id="" onchange="alert(this.value)">
+</body>
+</html>
+4:12

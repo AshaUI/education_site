@@ -1,0 +1,89 @@
+#demo{
+    animation-name: res;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    text-align: center;
+    background-color: darkseagreen;
+}
+#a{
+    color:white;
+    border: none;
+    font-style: oblique;
+    
+
+}
+
+
+@keyframes res{
+0%{background-color:darkblue;}
+25%{background-color:darkmagenta}
+50%{background-color:rgb(65, 59, 6)}
+75%{background-color:forestgreen}
+
+}
+
+#demo2{
+    animation-name: par;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    text-align: center;
+    background-color: darkseagreen;
+}
+#b{
+    color: black;
+    font-size: 30px;
+    font-style: italic;
+}
+@keyframes par{
+    0%{background-color: aqua;}
+    25%{background-color:violet}
+    50%{background-color:khaki}
+    75%{background-color:lightgreen}
+    
+    }
+
+    h2{
+        border: 2px groove blue;
+        padding: 40px;
+        padding-left: 50px;
+        width: 20%;
+    }
+#c{
+    animation-name: thnk;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+
+@keyframes thnk{
+
+    from{margin-left: 60%; background-color: rgb(81, 81, 166);}
+    to{margin-left: 0%; background-color: palevioletred;}
+
+}
+
+#z{
+    justify-content: end;
+    color: white;
+text-align: center;
+font-style: italic;
+
+}
+
+#span::before{
+
+    content: "mechigan";
+    animation: animate infinite 5s;
+}
+
+@keyframes animate{
+    0%{ contenet:"mechigan";
+    }
+    50%{ contenet:"agra";
+    }
+    75%{ contenet:"delhi";
+    }
+}
+

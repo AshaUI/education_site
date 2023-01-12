@@ -1,0 +1,86 @@
+/* p{ 
+    color:blueviolet;
+    text-align:end;
+    background-color:gold;
+}
+h5{
+    color:lime;
+    text-align:end;
+    background-color:fuchsia;
+}
+div{
+    color:darkcyan;
+    text-align: end;
+    background-color: gold;
+
+}
+h1
+        {
+          color:firebrick;  
+          text-align:center;
+          background-color: brown;
+        }
+
+        /* inline>>interna>>external
+        if any element is having proprties from both inline and internal ,elem will take inline and check are there any extra proprties in internal */
+
+/* background image adjusting */
+
+body{
+    background-image: url('./images/homebg.jpg'),url('./images/contact.jpg'),url('./images/home2.jpg');
+    background-repeat: no-repeat;
+    background-size: 550px 100%;
+  background-position:0px 0px,550px 0px,1100px 0px ;
+  background-attachment: fixed;
+}
+
+#a{
+    color: black;
+    text-align: end;
+}
+#b{
+    color:brown;
+    text-align: left;
+}
+.x{
+    color: darkblue;
+    background-color: aquamarine;
+}
+
+.y{
+    color: darkblue;
+    background-color: goldenrod;
+    text-align: end;
+}
+
+/**{
+background-color: white;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

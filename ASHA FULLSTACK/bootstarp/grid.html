@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid system</title>
+</head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- short cut to make 12  columns (.col-1*12)-->
+<body>
+    <div> 
+        <h1 style="text-align: center;background-color:coral;text-shadow: 3px 2px white;">JS concepts in BOOTSTRAP grid system</h1>
+          <div class="row" style="border: 4px solid rgb(147, 224, 147); " >
+         <div class="col-4"  style="text-align: center;background-color: blue;color: aqua;font-size: 30px;text-shadow: 3px 2px black;">JS Web APIs </div>
+      <div class="col-4" style="text-align: center;background-color: green;color: aqua;font-size: 30px;text-shadow: 3px 2px black">JS AJAX<br>
+</div>
+      <div class="col-4"  style="text-align: center;background-color: yellowgreen;color: aqua;font-size: 30px;text-shadow: 3px 2px black ">JS JSON<br>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-4" style="background-color:rgb(0, 191, 255);text-align: center;">
+        <img src="https://i.ytimg.com/vi/Ocrbt4A_sgY/maxresdefault.jpg" width="400" height="400" style="background-color: blue;">
+        <p style="font-weight: bold;">The purpose of API is to communicate between apps with each other as intermediary, where both apps might have been built with different tools and technologies. It can be achieved by using api standards like REST, SOAP which outline protocols or sets of rules which the client (who needs to call) and server (who serves client’s requests) need to follow. These standards are key to communication. These standards outline what a request should look like and the format in which client should expect response from server. 
+            Every api exposes its endpoints (also called entrypoints), which allows its client to use it to access features of apis. For example, in JavaScript, to work with DOM, it exposes Document as an entrypoint in order to work with multiple methods. It allows its client to use it in order to manipulate DOM. In JavaScript however we use containers, which are nothing but HTML controls which can call APIs and response can be rendered within that control. 
+        </p></div>
+    <div class="col-4" style="background-color:rgb(109, 228, 109);text-align: center;">
+        <img src="https://www.codeproject.com/KB/scripting/1272258/articleimage.png" width="400" height="400" style="background-color:green; text-align: center;">
+        <p style="font-weight: bold;" >AJAX stands for Asynchronous JavaScript and XML. AJAX is a new technique for creating better, faster, and more interactive web applications with the help of XML, HTML, CSS, and Java Script.
+
+            Ajax uses XHTML for content, CSS for presentation, along with Document Object Model and JavaScript for dynamic content display.
+            
+            Conventional web applications transmit information to and from the sever using synchronous requests. It means you fill out a form, hit submit, and get directed to a new page with new information from the server.
+            Since then, however, there have been a number of developments in the technologies used in an Ajax application, and in the definition of the term Ajax itself. XML is no longer required for data interchange and, therefore, XSLT is no longer required for the manipulation of data. JavaScript Object Notation (JSON) is often used as an alternative format for data interchange,[15] although other formats such as preformatted HTML or plain text can also be used.</p>
+   
+
+          
+    </div>
+    <div class="col-4" style="background-color:rgb(212, 220, 94); text-align: center;"><img src="https://netflix.github.io/falcor/images/json-graph-cache.png"width="400" height="400" style="background-color:rgb(212, 220, 94); ">
+        <p style="font-weight: bold;">JSON grew out of a need for a stateless, real-time server-to-browser communication protocol without using browser plugins such as Flash or Java applets, the dominant methods used in the early 2000s.[10]
+    
+            Crockford first specified and popularized the JSON format.[11] The acronym originated at State Software, a company co-founded by Crockford and others in March 2001. The co-founders agreed to build a system that used standard browser capabilities and provided an abstraction layer for Web developers to create stateful Web applications that had a persistent duplex connection to a Web server by holding two Hypertext Transfer Protocol (HTTP) connections open and recycling them before standard browser time-outs if no further data were exchanged. The co-founders had a round-table discussion and voted whether to call the data format JSML (JavaScript Markup Language) or JSON (JavaScript Object Notation), as well as under what license type to make it available. The JSON.org[12] website was launched in 2002. In December 2005, Yahoo! began offering some of its Web services in JSON.[13]</p>
+       </div>
+       
+   </div>
+   <div class="row">
+    <div class="col-2" style="text-align: center;background-color: blue;color:white;font-size: 30px ;">Web Storage API</div>
+    <div class="col-2" style="text-align: center;background-color: blue;color: white;font-size: 30px ;">Web Workers API</div>
+    <div class="col-2" style="text-align: center;background-color: green;color: white;font-size: 30px ;">AJAX PHP</div>
+    <div class="col-2" style="text-align: center;background-color: green;color: white;font-size: 30px ;">AJAX ASP</div>
+    <div class="col-2" style="text-align: center;background-color: yellowgreen;color: white;font-size: 30px ;">JSON PHP</div>
+    <div class="col-2" style="text-align: center;background-color: yellowgreen;color: white;font-size: 30px ;">JSONP</div>
+     </div>
+     <div class="row" style="border: 10px groov rgb(7, 7, 56);">
+        <div class="col-2" style="background-color:rgb(200, 234, 166);text-align: center;font-size: 20px;"><p>The localStorage object provides access to a local storage for a particular Web Site. It allows you to store, read, add, modify, and delete data items for that domain.
+
+            The data is stored with no expiration date, and will not be deleted when the browser is closed.
+            
+            The data will be available for days, weeks, and years.</p></div>
+        <div class="col-2" style="background-color:rgb(224, 158, 158);text-align: center;font-size: 20px;"><p>What is a Web Worker?
+            When executing scripts in an HTML page, the page becomes unresponsive until the script is finished.
+            
+            A web worker is a JavaScript that runs in the background, independently of other scripts, without affecting the performance of the page. You can continue to do whatever you want: clicking, selecting things, etc., while the web worker runs in the background.
+            </p></div>
+        <div class="col-2" style="background-color:rgb(195, 155, 230);text-align: center;font-size: 20px;"><p>Create an XMLHttpRequest object
+            Create the function to be executed when the server response is ready
+            Send the request off to a PHP file (gethint.php) on the server
+            Notice that q parameter is added gethint.php?q="+str
+            The str variable holds the content of the input field
+            </p></div>
+        <div class="col-2" style="background-color:rgb(135, 230, 230);text-align: center;font-size: 20px;"><p>Create an XMLHttpRequest object
+            Create the function to be executed when the server response is ready
+            Send the request off to an ASP file (gethint.asp) on the server
+            Notice that q parameter is added gethint.asp?q="+str
+            The str variable holds the content of the input field
+            </p></div>
+        <div class="col-2" style="background-color: rgb(233, 210, 210);text-align: center;font-size: 20px;"><p>PHP is a server side programming language, and can be used to access a database.
+
+            Imagine you have a database on your server, and you want to send a request to it from the client where you ask for the 10 first rows in a table called "customers".
+            
+            On the client, make a JSON object that describes the numbers of rows you want to return.
+            
+            </p></div>
+        <div class="col-2" style="background-color:aqua;text-align: center;font-size: 20px;"><p>Requesting a file from another domain can cause problems, due to cross-domain policy.
+
+            Requesting an external script from another domain does not have this problem.
+            
+            JSONP uses this advantage, and request files using the script tag instead of the XMLHttpRequest object.
+            
+            </p></div>
+
+     </div>
+     <di class="row" style="border: 10px groov rgb(7, 7, 56);">
+        <div class="col-4" style="background-color:aquamarine; text-align: center;border: 10px groov rgb(7, 7, 56);"><img src="https://media.tenor.com/RNpjaR9Iq0oAAAAC/files-api.gif" width="500px" height="500px"></div>
+        <div class="col-4" style="background-color:aquamarine ; text-align: center;border: 10px groov rgb(7, 7, 56);"><img src="https://tests4geeks.com/blog/wp-content/uploads/2016/04/AJAX-Demo-V4.5.gif"width="600px" height="500px"></div>
+        <div class="col-4" style="background-color:aquamarine ; text-align: center;border: 10px groov rgb(7, 7, 56);"><img src="https://blog.playcanvas.com/wp-content/uploads/2020/10/Kapture-2020-10-13-at-15.48.40.gif" width="500" height="500px"></div>
+     </di>
+
+
+
+    </div>
+   
+    
+</body>
+</html>
+
+
+
+
+        

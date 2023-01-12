@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <script src="inheritance.js"></script>
+</head>
+<body>
+    <h1>inheritance</h1>
+    <script>//-----basic inheritance -inheriting parent properties to child
+        //parent class
+        class Car{
+            Make;
+            Model;
+            Year;
+            constructor(make,model,year ){
+                this.Make=make;
+                this.Model=model;
+                this.Year=year;
+            }
+
+        }
+
+        //child class
+        class BMW extends Car{
+            Colour;
+            constructor(make,model,year,color){
+                super(make,model,year);
+                this.Colour=color;
+            }
+        }
+
+        var b1=new BMW('bmw','3086i',2018,'black')
+        console.log(b1.Make);
+        console.log(b1.Model);
+        console.log(b1.Year);
+    </script>
+</body>
+</html>

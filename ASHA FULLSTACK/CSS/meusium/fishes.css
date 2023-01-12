@@ -1,0 +1,6 @@
+body
+{
+    background-image:linear-gradient(rgb(167, 167, 236),rgb(160, 226, 160),skyblue);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

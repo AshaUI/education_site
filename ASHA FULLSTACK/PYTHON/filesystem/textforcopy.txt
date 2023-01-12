@@ -1,0 +1,1 @@
+here in this we are goint to read this content from curent file and writing to some other  file nothing but copying

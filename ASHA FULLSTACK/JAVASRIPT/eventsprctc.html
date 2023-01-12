@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myfun()
+        {
+            alert("hello onclick")
+        }
+        function myfun2(){
+          var n=document.form1.myname.value
+          alert(n)
+        }
+        function myfun3(){
+            alert("hey onkeyup")
+        }
+        function Mmouse(){ //while mouseover these twolines executing one afer one
+            alert("mouse over is happeningon click3 button")
+           document.write("docomnt.write functn")
+        }
+      function  func1(){
+        alert("hi priya")
+      }
+        function func2(){
+var v=document.form2.pname.value
+    alert(v)
+        }
+    </script>
+</head>
+<body>
+    <!--onclick--><p>onclick</p>
+
+    <input type="button" value="click1" onclick="myfun()"><br><br><br>
+    <form name="form1">
+        <input type="text" name="myname" id="n">   <!--for space bar ,, to enter txt, path doc.frm2.mname.value stores  in n  wat ever text we enter  -->
+        <input type="button" value="click2" onclick="myfun2()"> <!--for click bttn,, once we click btn onclk events fun myfun() will be executed-->
+    </form><br><br><br>
+    <!--onkeyup--><p>onkeyup</p>
+    <input type="text" name="n" onkeyup="myfun3()"><!--wen we enter any key from keyboard alert will come,key can be enterd in spasbar or on btn-->
+<br><br><br>
+<!--onmouseover--><p>onmouseover</p>
+<input type="button" value="click3" onmouseover="Mmouse()"><hr>
+<!--onchange--><p>onchange</p> <!--wrking like path assigning to var-->
+<input type="text" name="name" id="n" onchange="alert(this.value)">
+<br>
+<input type="button" value="click22" onclick="func1()">
+<form name="form2">
+<input type="text" name="pname" id="n" >
+<input type="button" value="print" onclick="func2()">
+</form>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <script> function  validate(){
+        var name=document.getElementById("name").value;//varia is needed for ifvalidations
+        var subject=document.getElementById("subject").value;
+        var phone=document.getElementById("phone").value;
+        var email=document.getElementById("email").value;
+        var comments=document.getElementById("comment").value;
+        var error_message=document.getElementById("error_message"); //this var will wait at  this element
+        error_message.style.padding = "10px";
+        var text;
+        if(name.length<4){
+            text="enter valid name";
+            error_message.innerHTML=text;
+            return false;
+        }
+        if(subject.length<3){
+            text="enter valid subjectname";
+            error_message.innerHTML=text;
+            return false;
+        }
+        if(isNaN(phone)||phone.length!=10){
+            text="enter valid mobilenumber";
+            error_message.innerHTML=text;
+            return false;
+        }
+        if(email.indexOf("@") == -1 || email.length < 6)  
+        {
+          text = "Please Enter valid Email";
+          error_message.innerHTML = text;
+          return false;
+        }
+        if(comments.length <= 50){
+          text = "Please Enter More Than 50 Characters";
+          error_message.innerHTML = text;
+          return false;
+        }
+        alert("you have successfully submitted your form")
+        return true;
+        }
+
+    </script>
+
+</head>
+<body  style="text-align: center;">
+    <div>
+    <h1>CONTACT US</h1>
+    <div  id="error_message"> 
+
+    </div>
+        <form id="myform" onsubmit="return validate();">
+            <div class="input_field">
+            <input type="text"  placeholder="name"  id="name">
+           </div>
+           <div class="input_field">
+            <input type="text"  placeholder="subject"  id="subject">
+          </div>
+          <div class="input_field">
+            <input type="text"  placeholder="phone"  id="phone">
+        </div>
+        <div class="input_field">
+            <input type="text"  placeholder="email"  id="email">
+        </div>
+        <div class="input_field">
+            <textarea  placeholder="comments" id="comments"></textarea>
+        </div>
+        <div>
+        <input type="submit" >
+    </div>
+         </form>
+   
+</div>  
+</body>
+</html>
